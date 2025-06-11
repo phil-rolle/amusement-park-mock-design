@@ -1,5 +1,7 @@
 ## 📐 Design Properties (AWS-Specific Architecture)
 
+---
+
 ### 📈 Diagram
 ```mermaid
 graph TD
@@ -39,6 +41,8 @@ C --> M
 C --> N
 M --> O
 ```
+
+---
 
 ### ✅ High Availability
 
