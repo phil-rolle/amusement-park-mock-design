@@ -1,3 +1,5 @@
+mermaid
+
 graph TD
 
 subgraph Client
