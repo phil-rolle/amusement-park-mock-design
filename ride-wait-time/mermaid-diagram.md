@@ -5,25 +5,25 @@ subgraph Client
     A[Mobile App UI]
 end
 
-subgraph API Layer
-    B[API Gateway / Load Balancer]
-    C[Ride API Service - REST/gRPC on K8s]
+subgraph API_Layer
+    B[API Gateway and Load Balancer]
+    C[Ride API Service - REST or gRPC on K8s]
 end
 
-subgraph Cache & Storage
-    D[Redis `(hot cache`)]
-    E[Postgres / Cloud SQL / Spanner]
+subgraph Cache_and_Storage
+    D[Redis - Hot Cache]
+    E[Postgres or Cloud SQL or Spanner]
 end
 
-subgraph Stream Ingestion
-    F[Kafka / PubSub `(Sensor Input`)]
-    G[Stream Processor - Kafka Streams / Dataflow]
+subgraph Stream_Ingestion
+    F[Kafka or PubSub - Sensor Input]
+    G[Stream Processor - Kafka Streams or Dataflow]
 end
 
 subgraph Observability
-    M[Prometheus / Grafana]
-    N[Logs `(ELK / Loki`)]
-    O[Alerting `(PagerDuty / Alertmanager`)]
+    M[Prometheus and Grafana]
+    N[Logs - ELK or Loki]
+    O[Alerting - PagerDuty or Alertmanager]
 end
 
 A --> B --> C
