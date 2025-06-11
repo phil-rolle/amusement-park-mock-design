@@ -133,5 +133,3 @@
 - Discuss **monitoring/alerting** and **failure recovery** proactively.
 
 ---
-
-Feel free to ask for detailed diagrams, cloud-specific designs, or deeper mock interviews on any prompt!
