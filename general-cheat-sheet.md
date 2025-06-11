@@ -80,17 +80,17 @@ flowchart TD
     subgraph Ingestion & Processing
         D1[Ride Sensors / Edge Emitters]
         D2[Kafka / PubSub]
-        D3[Stream Processor (Flink / Beam)]
+        D3[Stream Processor - Flink / Beam]
     end
 
     subgraph Storage
-        E1[Relational DB (PostgreSQL / Aurora)]
+        E1[Relational DB - PostgreSQL / Aurora]
     end
 
     subgraph Observability
         F1[Prometheus / Grafana]
         F2[CloudWatch / ELK / Loki]
-        F3[Alerts (PagerDuty / SNS)]
+        F3[Alerts - PagerDuty / SNS]
     end
 
     A2 --> B1 --> B2 --> C1
