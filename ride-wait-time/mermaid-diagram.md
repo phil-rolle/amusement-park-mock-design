@@ -11,19 +11,19 @@ subgraph API Layer
 end
 
 subgraph Cache & Storage
-    D[Redis (hot cache)]
+    D[Redis `(hot cache`)]
     E[Postgres / Cloud SQL / Spanner]
 end
 
 subgraph Stream Ingestion
-    F[Kafka / PubSub (Sensor Input)]
-    G[Stream Processor - (Kafka Streams / Dataflow]
+    F[Kafka / PubSub `(Sensor Input`)]
+    G[Stream Processor - Kafka Streams / Dataflow]
 end
 
 subgraph Observability
     M[Prometheus / Grafana]
-    N[Logs (ELK / Loki)]
-    O[Alerting (PagerDuty / Alertmanager)]
+    N[Logs `(ELK / Loki`)]
+    O[Alerting `(PagerDuty / Alertmanager`)]
 end
 
 A --> B --> C
