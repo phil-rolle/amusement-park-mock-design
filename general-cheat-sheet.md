@@ -105,7 +105,7 @@ flowchart TD
     F1 --> F3
 ```
 
-# 🧠 What It Shows:
+#### 🧠 What It Shows:
 
 Mobile app requests go through API Gateway to the Ride Wait Time Service.
 
