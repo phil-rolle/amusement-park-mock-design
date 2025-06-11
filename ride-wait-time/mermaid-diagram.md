@@ -1,5 +1,4 @@
-mermaid
-
+```mermaid
 graph TD
 
 subgraph Client
@@ -36,4 +35,4 @@ G --> E
 C --> M
 C --> N
 M --> O
-
+```
