@@ -7,7 +7,7 @@ end
 
 subgraph API Layer
     B[API Gateway / Load Balancer]
-    C[Ride API Service (REST/gRPC on K8s)]
+    C[Ride API Service - REST/gRPC on K8s]
 end
 
 subgraph Cache & Storage
@@ -17,7 +17,7 @@ end
 
 subgraph Stream Ingestion
     F[Kafka / PubSub (Sensor Input)]
-    G[Stream Processor (Kafka Streams / Dataflow)]
+    G[Stream Processor - (Kafka Streams / Dataflow]
 end
 
 subgraph Observability
